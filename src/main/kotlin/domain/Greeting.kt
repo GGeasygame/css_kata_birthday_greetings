@@ -1,4 +1,4 @@
 package org.example.domain
 
-data class Greeting(val greeting: String) {
+data class Greeting(val greeting: String, val friend: Friend) {
 }
