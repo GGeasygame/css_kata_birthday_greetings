@@ -6,8 +6,8 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import kotlin.io.path.readLines
 
-class CsvFriendReader(private val filePath : Path) {
-    fun readFriends() : List<Friend> {
+class CsvFriendReader(private val filePath : Path) : FriendReader {
+    override fun readFriends() : List<Friend> {
         return filePath.readLines()
             .drop(1)
             .map(this::parseFriend)
