@@ -7,7 +7,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class BirthdayGreetingSenderTest {
+class BirthdayGreetingGeneratorTest {
 
     private val testee = BirthdayGreetingGenerator()
     private val today = LocalDate.of(2024, 12, 12)
